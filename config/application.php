@@ -11,6 +11,15 @@ if (file_exists($root_dir . '/.env')) {
   $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
 }
 
+/* Multisite */
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true); // Set to false if using subdirectories
+define('DOMAIN_CURRENT_SITE', getenv('DOMAIN_CURRENT_SITE'));
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 /**
  * Set up our global environment constant and load its config first
  * Default: development
