@@ -12,6 +12,7 @@ if (file_exists($root_dir . '/.env')) {
 }
 
 /* Multisite */
+/*
 define('WP_ALLOW_MULTISITE', true);
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', true); // Set to false if using subdirectories
@@ -24,6 +25,7 @@ define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
+*/
 
 /**
  * Set up our global environment constant and load its config first
