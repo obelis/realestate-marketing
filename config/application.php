@@ -19,11 +19,14 @@ define('DOMAIN_CURRENT_SITE', getenv('DOMAIN_CURRENT_SITE'));
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
+define( 'NOBLOGREDIRECT', '' );
 
+/*
 define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
+*/
 
 /**
  * Set up our global environment constant and load its config first
